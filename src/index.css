@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+::selection {
+  background-color: #10b981;
+  color: white;
+}
